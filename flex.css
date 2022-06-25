@@ -1,0 +1,328 @@
+.row-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.row-start{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.row-around{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.row-center{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.row-end{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.column-between{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.column-around{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.column-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.pos-center{
+    align-items: center;
+}
+.pos-end{
+    align-items: flex-end;
+}
+.pos-start{
+    align-items: flex-start;
+}
+
+.change-opacity a:hover{
+    opacity: 0.5;
+}
+
+#button-mid{
+    margin-right: 20px;
+    width: 180px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid gray;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+}
+#button-mid:focus{
+    outline: none;
+}
+#button-mid:hover{
+    background-color: transparent;
+    color: black;
+}
+.button-mid-buy{
+    margin-right: 20px;
+    width: 150px;
+    height: 40px;
+    border-radius: 2px;
+    border: none;
+    background-color: black;
+    font-size: 20px;
+    color: white;
+    transition: 0.5s;
+}
+.button-mid-buy:focus{
+    outline: none;
+}
+.button-mid-buy:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+
+#button-small{
+    margin-right: 20px;
+    width: 100px;
+    height: 25px;
+    border-radius: 22.5px;
+    border: 2px solid gray;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+}
+#button-small:focus{
+    outline: none;
+}
+#button-small:hover{
+    background-color: transparent;
+    color: black;
+}
+
+#button-small-rect{
+    margin-right: 20px;
+    width: 100px;
+    height: 25px;
+    border: 0;
+    background-color: firebrick;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+}
+#button-small-rect:focus{
+    outline: none;
+}
+#button-small-rect:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+}
+
+#button-login{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #eee;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+    transition: 0.5s;
+}
+#button-login:focus{
+    outline: none;
+}
+#button-login:hover{
+    background-color: transparent;
+    color: black;
+    transition: 0.5s;
+    border: 2px solid black;
+}
+#button-signin{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #eee;
+    
+    background-color: transparent;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+}
+#button-signin:focus{
+    outline: none;
+}
+#button-signin:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+#step-back{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #eee;
+    background-color: white;
+    font-weight: bold;
+    font-size: 18px;
+    color: #278458;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#step-back:focus{
+    outline: none;
+}
+#step-back:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+#step-next{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #eee;
+    background-color: #278458;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#step-next:focus{
+    outline: none;
+}
+#step-next:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+
+.date-btn{
+    width: 92%;
+    height: 40px;
+    background-color: firebrick;
+    border-radius: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+.date-btn:focus{
+    outline: none;   
+}
+.date-btn:hover{
+    background-color: black;
+}
+.img-right {
+    transform: rotate(90deg);
+}
+.img-left {
+    transform: rotate(-90deg);
+}
+.img-mirror {
+    transform: rotate(180deg);
+}
+
+
+ul.breadcrumb {
+    padding: 25px 16px;
+    list-style: none;
+    margin-left: 209px;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-family: 'SegoeUI';
+    font-size: 16px;
+    color: gray;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: rgb(59, 59, 59);
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #eee;
+}
+
+@media screen and (max-width: 1325px) {
+    
+}
+
+@media screen and (max-width: 1199px) {
+    
+}
+
+@media screen and (max-width: 991px) {
+    
+}
+
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (max-width: 575px) {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

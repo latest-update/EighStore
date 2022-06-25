@@ -1,0 +1,15 @@
+Options +FollowSymLinks -MultiViews
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+RewriteRule ^ %1 [R=308,L]
+
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteRule ^(.*?)/?$ $1.php [L]
+
+Options -Indexes
+ErrorDocument 404 http://eighstore-php-easier/
+ErrorDocument 403 http://eighstore-php-easier/
+
